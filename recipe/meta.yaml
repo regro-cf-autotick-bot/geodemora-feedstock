@@ -1,5 +1,5 @@
 {% set name = "geodemora" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b9be527b942c54d1a6a0e5c844d5acbddd30205c14bd23a342bf615b4c992b03
+  sha256: 374a051bf976f05b862a9a148e972069f4409ed9375f71266339054c7bf906db
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - numpy
     - pyshp
     - python >=3.7
+    - rasterio
 
 test:
   imports:
